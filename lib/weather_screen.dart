@@ -23,7 +23,7 @@ late  Future<Map <String,dynamic>> weather;
     try {
       final res = await http.get(
         Uri.parse(
-            'http://api.openweathermap.org/data/2.5/forecast?q=London,uk&APPID=$openWeatherAPIKey'),
+            'http://api.openweathermap.org/data/2.5/forecast?q=Hyderabad&APPID=$openWeatherAPIKey'),
       );
       final data = jsonDecode(res.body);
       if (data['cod'] != '200') {
